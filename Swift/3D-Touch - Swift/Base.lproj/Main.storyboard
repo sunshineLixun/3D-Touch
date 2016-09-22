@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="faA-JR-ALS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="306-c1-Yfe">
+            <objects>
+                <navigationController id="faA-JR-ALS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zic-Au-Lqi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1843137255" green="0.64313725489999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uuj-Y9-Vda"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7NA-oL-YaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-476" y="50"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_D_Touch___Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zMZ-GS-8Wi">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="tHr-hH-72L"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tLd-rB-fyo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zMZ-GS-8Wi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8PV-4n-dLA"/>
+                            <constraint firstAttribute="trailing" secondItem="zMZ-GS-8Wi" secondAttribute="trailing" id="Hp7-OD-K5J"/>
+                            <constraint firstItem="zMZ-GS-8Wi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LdK-Ym-9aa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zMZ-GS-8Wi" secondAttribute="bottom" id="SNv-Bw-URf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bSP-7Y-qii"/>
+                    <connections>
+                        <outlet property="tableView" destination="zMZ-GS-8Wi" id="hzd-x5-Rn5"/>
+                        <segue destination="BLd-Cx-fsX" kind="show" id="Sfd-Tv-z7a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349.60000000000002" y="49.925037481259373"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Blm-2C-PnA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIY-J7-FUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="detail" id="BLd-Cx-fsX" customClass="DetailViewController" customModule="_D_Touch___Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4qs-3v-JbG"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Iz-aA-Qjn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kWr-7H-r0u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6pj-qB-6EN">
+                                <color key="backgroundColor" red="0.1843137255" green="0.64313725489999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Luf-82-f9t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makeToBound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6pj-qB-6EN" secondAttribute="trailing" constant="20" id="6g8-Uo-8Q4"/>
+                            <constraint firstItem="6pj-qB-6EN" firstAttribute="top" secondItem="4qs-3v-JbG" secondAttribute="bottom" constant="150" id="L15-ox-TTl"/>
+                            <constraint firstItem="6pj-qB-6EN" firstAttribute="leading" secondItem="kWr-7H-r0u" secondAttribute="leading" constant="20" id="QBk-Ud-cGu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="6pj-qB-6EN" id="XLv-kZ-UyL"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1183" y="50"/>
+        </scene>
+    </scenes>
+</document>
