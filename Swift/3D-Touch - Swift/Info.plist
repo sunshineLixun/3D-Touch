@@ -35,27 +35,27 @@
 	<array>
 		<dict>
 			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutItemIconTypeSearch</string>
+			<string>UIApplicationShortcutIconTypeShare</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>弹一弹</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>弹一弹</string>
+			<string>com.yuwubao.search</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutItemIconTypeSearch</string>
+			<string>UIApplicationShortcutIconTypeShare</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>摇一摇</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>摇一摇</string>
+			<string>com.yuwubao.search</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutItemIconTypeSearch</string>
+			<string>UIApplicationShortcutIconTypeShare</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>扫一扫</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>扫一扫</string>
+			<string>com.yuwubao.search</string>
 		</dict>
 	</array>
 	<key>UILaunchStoryboardName</key>

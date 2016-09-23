@@ -21,7 +21,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     }
     
-    func widgetLabelAction() -> Void {
+  @objc private  func widgetLabelAction() -> Void {
         extensionContext?.open(NSURL(string: "simple://finished") as! URL, completionHandler: nil)
     }
     

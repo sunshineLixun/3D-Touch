@@ -58,14 +58,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func quickActionWithShortcutItem(shortcutItem: UIApplicationShortcutItem){
+  private  func quickActionWithShortcutItem(shortcutItem: UIApplicationShortcutItem){
         let nav = self.window?.rootViewController as? UINavigationController
-        if shortcutItem.type == "弹一弹"{
-        }else if shortcutItem.type == "摇一摇"{
+        if shortcutItem.localizedTitle == "弹一弹"{
+            
+        }else if shortcutItem.localizedTitle == "摇一摇"{
+            
             let detailVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
             nav!.pushViewController(detailVC, animated: true)
             
         }else{
+            
             nav!.pushViewController(ThirdViewController(), animated: true)
         }
     }
