@@ -16,7 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        if UIDevice.current.systemVersion >= "9.0" {
+            let shortcutItem = launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem
+            if let shortcutItem = shortcutItem{
+                self.quickActionWithShortcutItem(shortcutItem: shortcutItem)
+            }
+            
+        }
+
         return true
+    }
+    
+    //MARK: - 3D-Touch
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        self.quickActionWithShortcutItem(shortcutItem: shortcutItem)
+        completionHandler(true)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -39,6 +55,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    
+    func quickActionWithShortcutItem(shortcutItem: UIApplicationShortcutItem){
+        let nav = self.window?.rootViewController as? UINavigationController
+        if shortcutItem.type == "弹一弹"{
+        }else if shortcutItem.type == "摇一摇"{
+            let detailVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
+            nav!.pushViewController(detailVC, animated: true)
+            
+        }else{
+            nav!.pushViewController(ThirdViewController(), animated: true)
+        }
     }
 
 

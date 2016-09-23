@@ -10,7 +10,7 @@
         <scene sceneID="306-c1-Yfe">
             <objects>
                 <navigationController id="faA-JR-ALS" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zic-Au-Lqi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zic-Au-Lqi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.1843137255" green="0.64313725489999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,7 +67,6 @@
         <!--Detail View Controller-->
         <scene sceneID="Blm-2C-PnA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rIY-J7-FUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="detail" id="BLd-Cx-fsX" customClass="DetailViewController" customModule="_D_Touch___Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4qs-3v-JbG"/>
@@ -103,6 +102,7 @@
                         <outlet property="textView" destination="6pj-qB-6EN" id="XLv-kZ-UyL"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIY-J7-FUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1183" y="50"/>
         </scene>

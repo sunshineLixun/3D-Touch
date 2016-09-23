@@ -15,6 +15,7 @@
 		E916C3D81D93BF51004C7D02 /* _D_Touch___SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916C3D71D93BF51004C7D02 /* _D_Touch___SwiftTests.swift */; };
 		E916C3E31D93BF51004C7D02 /* _D_Touch___SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916C3E21D93BF51004C7D02 /* _D_Touch___SwiftUITests.swift */; };
 		E916C3F11D93C63F004C7D02 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916C3F01D93C63F004C7D02 /* DetailViewController.swift */; };
+		E96B4E801D94BF1F005EF0A4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B4E7F1D94BF1F005EF0A4 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E916C3E21D93BF51004C7D02 /* _D_Touch___SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_D_Touch___SwiftUITests.swift"; sourceTree = "<group>"; };
 		E916C3E41D93BF51004C7D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E916C3F01D93C63F004C7D02 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E96B4E7F1D94BF1F005EF0A4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				E916C3C21D93BF51004C7D02 /* AppDelegate.swift */,
 				E916C3C41D93BF51004C7D02 /* ViewController.swift */,
 				E916C3F01D93C63F004C7D02 /* DetailViewController.swift */,
+				E96B4E7F1D94BF1F005EF0A4 /* ThirdViewController.swift */,
 				E916C3C61D93BF51004C7D02 /* Main.storyboard */,
 				E916C3C91D93BF51004C7D02 /* Assets.xcassets */,
 				E916C3CB1D93BF51004C7D02 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			files = (
 				E916C3F11D93C63F004C7D02 /* DetailViewController.swift in Sources */,
 				E916C3C51D93BF51004C7D02 /* ViewController.swift in Sources */,
+				E96B4E801D94BF1F005EF0A4 /* ThirdViewController.swift in Sources */,
 				E916C3C31D93BF51004C7D02 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +516,7 @@
 				E916C3E91D93BF51004C7D02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E916C3EA1D93BF51004C7D02 /* Build configuration list for PBXNativeTarget "3D-Touch - SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				E916C3EC1D93BF51004C7D02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E916C3ED1D93BF51004C7D02 /* Build configuration list for PBXNativeTarget "3D-Touch - SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				E916C3EF1D93BF51004C7D02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
